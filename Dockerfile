@@ -13,4 +13,5 @@ EXPOSE 9411
 
 ENV TZ=America/Argentina/Buenos_Aires
 ENV COLLECTOR_OTLP_ENABLED=true
+ENV OTEL_EXPORTER_OTLP_ENDPOINT=https://tresdoce-jaeger.up.railway.app:4318
 
