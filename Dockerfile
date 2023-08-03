@@ -15,3 +15,4 @@ EXPOSE 9411
 ENV TZ="America/Argentina/Buenos_Aires"
 ENV COLLECTOR_OTLP_ENABLED="true"
 #ENV SAMPLING_STRATEGIES_FILE=/etc/jaeger/sampling_strategies.json
+CMD [ "--query.ui-config=/etc/jaeger-ui.json", "--reporter.grpc.host-port=:4318" ]
