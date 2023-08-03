@@ -20,7 +20,7 @@ ARG JAEGER_VERSION=latest
 FROM jaegertracing/all-in-one:${JAEGER_VERSION}
 
 EXPOSE 16686
-EXPOSE 4317
+EXPOSE 4318
 
 ENV TZ="America/Argentina/Buenos_Aires"
-CMD ["--reporter.grpc.host-port=:4317"]
+CMD ["--reporter.grpc.host-port=:4318"]
